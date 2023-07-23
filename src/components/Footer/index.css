@@ -1,0 +1,25 @@
+.footer {
+  height: 27vh;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  background: #0a0a0a;
+  padding: 2rem 8rem;
+}
+.footer-divider {
+  border: 0.2px solid #999;
+  margin-top: 3rem;
+}
+.footer-col {
+  display: flex;
+  color: #ebebeb;
+  justify-content: space-between;
+  font-size: 0.75rem;
+  margin-left: 0.5rem;
+}
+.footer-icons {
+  color: #ebebeb;
+  display: flex;
+  gap: 1rem;
+  cursor: pointer;
+}
