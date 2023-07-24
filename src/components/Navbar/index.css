@@ -1,7 +1,6 @@
 .navbar {
-  width: 90%;
   margin: auto;
-  padding: 0;
+  padding: 1rem 2rem;
 }
 .help-icon {
   margin-right: 0.5rem;

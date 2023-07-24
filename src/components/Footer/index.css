@@ -1,8 +1,6 @@
 .footer {
   height: 27vh;
   width: 100%;
-  position: absolute;
-  bottom: 0;
   background: #0a0a0a;
   padding: 2rem 8rem;
 }

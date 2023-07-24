@@ -1,0 +1,23 @@
+.info-container {
+  padding: 0 3rem;
+  width: 50%;
+}
+.fields-row {
+  margin-top: 1rem;
+}
+.field-icon {
+  margin-right: 1rem;
+}
+.field-img {
+  vertical-align: bottom;
+}
+.extra-info {
+  background: #f5f5f5;
+  padding: 0.9rem 1rem;
+  margin-top: 1rem;
+  border-radius: 0.4rem;
+}
+.shield-icon{
+    vertical-align: middle;
+    margin-left: 0.5rem;
+}
