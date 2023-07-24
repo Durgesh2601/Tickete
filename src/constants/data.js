@@ -7,8 +7,9 @@ import {
   ClockCircleFilled,
   ScheduleFilled,
 } from "@ant-design/icons";
+import { Typography } from "antd";
 
-import { Text } from "../components/CommonComponents";
+const { Text } = Typography;
 
 const formFields = {
   basic: {
@@ -265,4 +266,27 @@ const tikcetData = [
   },
 ];
 
-export { formFields, fAndQContents, ticketePromiseData, tikcetData };
+const taxData = [
+  {
+    id: "1",
+    name: "<pax type>",
+    price: "<price>",
+  },
+  {
+    id: "2",
+    name: "<pax type>",
+    price: "<price>",
+  },
+  {
+    id: "3",
+    name: "<fee>",
+    price: "<price>",
+  },
+  {
+    id: "4",
+    name: "<pax type>",
+    price: "< - price>",
+    isDiscount: true,
+  },
+];
+export { formFields, fAndQContents, ticketePromiseData, tikcetData, taxData };

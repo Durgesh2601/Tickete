@@ -1,14 +1,15 @@
 import { Col, Divider, Form, Row, Space } from "antd";
-import "./index.css";
 import {
   Confirmation,
   CustomField,
   FieldRenderer,
   RenderHeader,
   Text,
+  TicketOverview,
 } from "../CommonComponents";
 import DemoImg from "../../assets/demo1.jpg";
 import { formFields, tikcetData } from "../../constants/data";
+import "./index.css";
 
 const InfoContainer = () => {
   return (
@@ -22,7 +23,7 @@ const InfoContainer = () => {
             {Object.keys(formFields)?.map((item) => {
               const fieldValue = formFields?.[item];
               return (
-                <div id={fieldValue?.id}>
+                <div key={fieldValue?.id}>
                   <RenderHeader
                     title={fieldValue?.title}
                     subTitle={fieldValue?.subTitle}
@@ -33,7 +34,7 @@ const InfoContainer = () => {
                     )}
                     <Row justify="space-between" className="fields-row">
                       {fieldValue?.fields?.map((field) => (
-                        <Col span={10}>
+                        <Col span={10} key={field?.id}>
                           <Form.Item
                             name={field?.name}
                             label={field?.label}
@@ -85,6 +86,8 @@ const InfoContainer = () => {
               </Row>
             ))}
             <Divider />
+            {/* Tickets Overview */}
+            <TicketOverview />
           </Space>
         </Col>
       </Row>

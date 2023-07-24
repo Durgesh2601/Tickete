@@ -8,10 +8,13 @@ import {
   Radio,
   Button,
   Space,
+  Divider,
 } from "antd";
-import { CreditCardFilled } from "@ant-design/icons";
+import { CreditCardFilled, TagFilled } from "@ant-design/icons";
 import fieldIcon from "../../assets/fieldIcon.svg";
 import ShieldIcon from "../../assets/ShieldIcon.svg";
+import { taxData } from "../../constants/data";
+
 const { Title, Text } = Typography;
 
 const FieldRenderer = ({ field }) => {
@@ -20,18 +23,18 @@ const FieldRenderer = ({ field }) => {
   const customStyle = {
     width: width || "100%",
   };
-  const custopProps = {
-    ...type,
+
+  const customProps = {
     placeholder,
     size: "large",
-    style: { ...customStyle },
+    style: customStyle,
   };
 
   const fieldMap = {
-    text: <Input {...custopProps} />,
-    number: <InputNumber {...custopProps} />,
-    select: <Select {...custopProps} />,
-    default: <Input {...custopProps} />,
+    text: <Input type="text" {...customProps} />,
+    number: <InputNumber {...customProps} />,
+    select: <Select {...customProps} />,
+    default: <Input type="text" {...customProps} />,
   };
   return fieldMap[type] || fieldMap["default"];
 };
@@ -123,6 +126,47 @@ const CardComponent = ({ data = {} }) => {
   );
 };
 
+const TicketOverview = () => {
+  return (
+    <>
+      <Row>
+        <Text strong>Tickets overview</Text>
+      </Row>
+      {taxData?.map((item) => (
+        <Row justify="space-between" key={item?.id} className="tax-row">
+          <Col className={item?.isDiscount ? "discount" : "tax"}>
+            {item?.name}
+          </Col>
+          <Col className={item?.isDiscount ? "discount" : "tax"}>
+            {item?.price}
+          </Col>
+        </Row>
+      ))}
+      <Divider />
+      <Row>
+        <TagFilled className="discount discount-icon" rotate={270} />
+        <Col className="discount discount-col">Have a promo code?</Col>
+      </Row>
+      <Divider />
+      <Row justify="space-between">
+        <Col>
+          <Text strong>Total</Text>
+        </Col>
+        <Col>
+          <Text strong>{"<price>"}</Text>
+        </Col>
+      </Row>
+      <Row className="tax-subrow">You will pay in {"<currency>"}</Row>
+      <Row className="cancellation">
+        <Col span={24}>
+          <Text strong>Free cancellation</Text>
+        </Col>
+        <Text type="secondary">Cancel before {"<date>"} for a full refund</Text>
+      </Row>
+    </>
+  );
+};
+
 export {
   Title,
   Text,
@@ -131,4 +175,5 @@ export {
   CustomField,
   Confirmation,
   CardComponent,
+  TicketOverview,
 };
