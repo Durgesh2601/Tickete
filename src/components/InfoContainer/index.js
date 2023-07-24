@@ -5,10 +5,8 @@ import {
   CustomField,
   FieldRenderer,
   RenderHeader,
-  Text,
-  Title,
 } from "../CommonComponents";
-import { formFields } from "../../constants/formFields";
+import { formFields } from "../../constants/data";
 
 const InfoContainer = () => {
   return (

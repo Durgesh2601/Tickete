@@ -59,7 +59,7 @@ const CustomField = ({ type = "primary", title = "" }) => {
 const RenderHeader = ({ title = "", subTitle = "" }) => {
   return (
     <>
-      <Title level={5}>{title}</Title>
+      <Title level={4}>{title}</Title>
       <Text type="secondary">{subTitle}</Text>
     </>
   );
@@ -91,7 +91,8 @@ const Confirmation = ({
       <Row className="fields-row">
         <Text type="secondary">
           With payment, you agree to the general{" "}
-          <a>terms and conditions of Tickete</a> & the <a>activity provider</a>.
+          <a href="/">terms and conditions of Tickete</a> & the{" "}
+          <a href="/">activity provider</a>.
         </Text>
       </Row>
       <Row className="fields-row">
