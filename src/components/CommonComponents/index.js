@@ -57,10 +57,10 @@ const CustomField = ({ type = "primary", title = "" }) => {
     </Row>
   );
 };
-const RenderHeader = ({ title = "", subTitle = "" }) => {
+const RenderHeader = ({ title = "", subTitle = "", titleLevel = 4 }) => {
   return (
     <>
-      <Title level={4}>{title}</Title>
+      <Title level={titleLevel}>{title}</Title>
       <Text type="secondary">{subTitle}</Text>
     </>
   );

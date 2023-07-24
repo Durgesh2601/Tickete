@@ -1,6 +1,6 @@
 .info-container {
   padding: 0 4rem;
-  width: 50%;
+  width: 100%;
 }
 .fields-row {
   margin-top: 1rem;
@@ -17,7 +17,14 @@
   margin-top: 1rem;
   border-radius: 0.4rem;
 }
-.shield-icon{
-    vertical-align: middle;
-    margin-left: 0.5rem;
+.shield-icon {
+  vertical-align: middle;
+  margin-left: 0.5rem;
+}
+.info-title {
+  padding: 1rem 4rem;
+}
+.info-divider{
+  border: 0.5px solid #e5e5e5;
+  height: 95%;
 }

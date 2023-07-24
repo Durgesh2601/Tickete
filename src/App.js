@@ -1,18 +1,12 @@
-import { Divider } from "antd";
-import Footer from "./components/Footer";
-import InfoContainer from "./components/InfoContainer";
 import Navbar from "./components/Navbar";
-import FrequentlyAskedQuestions from "./components/F&Q";
-import TicketePromise from "./components/TicketePromise";
+import Footer from "./components/Footer";
+import MainAppLayout from "./Layout";
 
 function App() {
-
   return (
     <div>
       <Navbar />
-      <InfoContainer />
-      <FrequentlyAskedQuestions />
-      <TicketePromise />
+      <MainAppLayout />
       <Footer />
     </div>
   );
