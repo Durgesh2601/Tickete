@@ -1,4 +1,4 @@
-import { Button, Col, Collapse, Row, Space } from "antd";
+import { Button, Col, Collapse, Divider, Row, Space } from "antd";
 import { MinusOutlined, PlusOutlined } from "@ant-design/icons";
 import { RenderHeader, Text } from "../CommonComponents";
 import { fAndQContents } from "../../constants/data";
@@ -56,6 +56,7 @@ const FrequentlyAskedQuestions = () => {
           </Space>
         </Col>
       </Row>
+      <Divider />
     </div>
   );
 };

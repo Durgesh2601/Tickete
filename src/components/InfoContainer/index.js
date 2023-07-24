@@ -48,6 +48,7 @@ const InfoContainer = () => {
         );
       })}
       <Confirmation />
+      <Divider />
     </Space>
   );
 };

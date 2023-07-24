@@ -6,11 +6,11 @@ import FrequentlyAskedQuestions from "./components/F&Q";
 import TicketePromise from "./components/TicketePromise";
 
 function App() {
+
   return (
     <div>
       <Navbar />
       <InfoContainer />
-      <Divider />
       <FrequentlyAskedQuestions />
       <TicketePromise />
       <Footer />
