@@ -1,0 +1,13 @@
+.tickete-container {
+  padding: 1rem 4rem;
+}
+.card-container {
+  padding: 0.8rem 1.5rem;
+  margin-top: 1rem;
+  border: 1px solid #d6d6d6;
+  border-radius: 0.5rem;
+  min-height: 12rem;
+}
+.card-title {
+  margin-top: 1.5rem;
+}

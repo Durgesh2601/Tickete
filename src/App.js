@@ -3,6 +3,7 @@ import Footer from "./components/Footer";
 import InfoContainer from "./components/InfoContainer";
 import Navbar from "./components/Navbar";
 import FrequentlyAskedQuestions from "./components/F&Q";
+import TicketePromise from "./components/TicketePromise";
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
       <InfoContainer />
       <Divider />
       <FrequentlyAskedQuestions />
+      <TicketePromise />
       <Footer />
     </div>
   );

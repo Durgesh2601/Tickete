@@ -1,3 +1,8 @@
+import ChatsCircle from "../assets/ChatsCircle.svg";
+import ShieldIcon from "../assets/ShieldBlue.svg";
+import CalendarBlank from "../assets/CalendarBlank.svg";
+import CircleCheck from "../assets/CircleCheck.svg";
+
 import { Text } from "../components/CommonComponents";
 
 const formFields = {
@@ -109,7 +114,12 @@ const formFields = {
 const fAndQContents = [
   {
     key: "1",
-    label: <Text style={{margin: '1rem 0'}} strong> Are my tickets transferable?</Text>,
+    label: (
+      <Text style={{ margin: "1rem 0" }} strong>
+        {" "}
+        Are my tickets transferable?
+      </Text>
+    ),
     children: (
       <Text type="secondary">
         No. The tickets can only be used by the person(s) whose details are
@@ -204,4 +214,32 @@ const fAndQContents = [
   },
 ];
 
-export { formFields, fAndQContents };
+const ticketePromiseData = [
+  {
+    id: "1",
+    title: "Official tickets",
+    subTitle: "Authorised reseller to top attraction",
+    imgSrc: CircleCheck,
+  },
+  {
+    id: "2",
+    title: "24/7 dedicated support",
+    subTitle: "We're here to help, talk to an expert",
+    imgSrc: ChatsCircle,
+  },
+  {
+    id: "3",
+    title: "Flexible bookings",
+    subTitle: "Book stress-free with easy cancellation",
+    imgSrc: CalendarBlank,
+  },
+  {
+    id: "4",
+    title: "100% secure payments",
+    subTitle: "Internationally recognized encrypted payment process",
+    imgSrc: ShieldIcon,
+    color: ''
+  },
+];
+
+export { formFields, fAndQContents, ticketePromiseData };

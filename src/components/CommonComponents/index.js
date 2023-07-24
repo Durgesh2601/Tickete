@@ -7,6 +7,7 @@ import {
   Col,
   Radio,
   Button,
+  Space,
 } from "antd";
 import { CreditCardFilled } from "@ant-design/icons";
 import fieldIcon from "../../assets/fieldIcon.svg";
@@ -105,4 +106,29 @@ const Confirmation = ({
   );
 };
 
-export { Title, Text, FieldRenderer, RenderHeader, CustomField, Confirmation };
+const CardComponent = ({ data = {} }) => {
+  const { title = "", subTitle = "", imgSrc = "" } = data || {};
+  return (
+    <Space direction="vertical" className="card-container">
+      <Row>
+        <img src={imgSrc} alt={title} />
+      </Row>
+      <Row className="card-title">
+        <Text strong>{title}</Text>
+      </Row>
+      <Row>
+        <Text type="secondary">{subTitle}</Text>
+      </Row>
+    </Space>
+  );
+};
+
+export {
+  Title,
+  Text,
+  FieldRenderer,
+  RenderHeader,
+  CustomField,
+  Confirmation,
+  CardComponent,
+};
