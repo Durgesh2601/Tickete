@@ -2,6 +2,11 @@ import ChatsCircle from "../assets/ChatsCircle.svg";
 import ShieldIcon from "../assets/ShieldBlue.svg";
 import CalendarBlank from "../assets/CalendarBlank.svg";
 import CircleCheck from "../assets/CircleCheck.svg";
+import {
+  CalendarFilled,
+  ClockCircleFilled,
+  ScheduleFilled,
+} from "@ant-design/icons";
 
 import { Text } from "../components/CommonComponents";
 
@@ -238,8 +243,26 @@ const ticketePromiseData = [
     title: "100% secure payments",
     subTitle: "Internationally recognized encrypted payment process",
     imgSrc: ShieldIcon,
-    color: ''
+    color: "",
   },
 ];
 
-export { formFields, fAndQContents, ticketePromiseData };
+const tikcetData = [
+  {
+    id: "1",
+    title: "<variant name>",
+    icon: <ScheduleFilled className="ticket-icon" />,
+  },
+  {
+    id: "2",
+    title: "<date>",
+    icon: <CalendarFilled className="ticket-icon" />,
+  },
+  {
+    id: "3",
+    title: "<time>",
+    icon: <ClockCircleFilled className="ticket-icon" />,
+  },
+];
+
+export { formFields, fAndQContents, ticketePromiseData, tikcetData };

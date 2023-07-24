@@ -5,8 +5,10 @@ import {
   CustomField,
   FieldRenderer,
   RenderHeader,
+  Text,
 } from "../CommonComponents";
-import { formFields } from "../../constants/data";
+import DemoImg from "../../assets/demo1.jpg";
+import { formFields, tikcetData } from "../../constants/data";
 
 const InfoContainer = () => {
   return (
@@ -15,7 +17,7 @@ const InfoContainer = () => {
         <RenderHeader title="Confirm and pay" titleLevel={2} />
       </Row>
       <Row>
-        <Col span={15}>
+        <Col span={14}>
           <Space direction="vertical" className="info-container">
             {Object.keys(formFields)?.map((item) => {
               const fieldValue = formFields?.[item];
@@ -60,8 +62,30 @@ const InfoContainer = () => {
             <Divider />
           </Space>
         </Col>
-        <Col >
+        <Col>
           <Divider type="horizontal" className="info-divider" />
+        </Col>
+        <Col span={9}>
+          <Space direction="vertical" className="info-container">
+            <Row>
+              <img src={DemoImg} alt="shield-icon" className="demo-img" />
+            </Row>
+            <Row>
+              <Text>
+                Amsterdam opeg boat canal cruise - Live Ggide - from Anne Frgnk
+                House
+              </Text>
+            </Row>
+            {tikcetData?.map((item) => (
+              <Row key={item?.id} align="middle">
+                <Col>{item?.icon}</Col>
+                <Col>
+                  <Text type="secondary">{item?.title}</Text>
+                </Col>
+              </Row>
+            ))}
+            <Divider />
+          </Space>
         </Col>
       </Row>
     </>
