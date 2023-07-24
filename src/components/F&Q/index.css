@@ -4,3 +4,9 @@
 .custom-collapse .ant-collapse-item:not(:last-child) {
   margin-bottom: 0.8rem;
 }
+.help-desk {
+  background: #fff7ed;
+  padding: 1.8rem 1.3rem;
+  border-radius: 0.8rem;
+  width: 100%;
+}
