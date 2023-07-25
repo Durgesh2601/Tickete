@@ -25,7 +25,11 @@ const FooterComp = () => {
             <li>Cancellation policy</li>
           </ul>
         </Col>
-        <Col xs={{ span: 24, order: 1 }} md={{ span: 2, order: 1 }} className="footer-icons">
+        <Col
+          xs={{ span: 24, order: 1 }}
+          md={{ span: 2, order: 1 }}
+          className="footer-icons"
+        >
           <InstagramFilled />
           <FacebookOutlined />
           <TwitterOutlined />
