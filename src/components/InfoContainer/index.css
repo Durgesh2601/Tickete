@@ -63,3 +63,18 @@
   border-radius: 0.5rem;
   padding: 1rem 1.2rem;
 }
+
+@media only screen and (max-width: 600px) {
+  .info-container {
+    padding: 1rem;
+  }
+  .info-title {
+    padding: 1rem 1.8rem;
+  }
+  .cancellation {
+    padding: 1rem;
+  }
+  .info-title {
+    padding: 1rem;
+  }
+}

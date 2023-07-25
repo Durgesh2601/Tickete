@@ -10,3 +10,12 @@
   border-radius: 0.8rem;
   width: 100%;
 }
+
+@media only screen and (max-width: 600px) {
+  .help-container {
+    padding: 1.5rem;
+  }
+  .help-desk{
+    margin-top: 1rem;
+  }
+}

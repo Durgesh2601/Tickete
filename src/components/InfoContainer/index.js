@@ -18,7 +18,7 @@ const InfoContainer = () => {
         <RenderHeader title="Confirm and pay" titleLevel={2} />
       </Row>
       <Row>
-        <Col span={14}>
+        <Col xs={{ span: 24, order: 2 }} md={{ span: 14, order: 1 }}>
           <Space direction="vertical" className="info-container">
             {Object.keys(formFields)?.map((item) => {
               const fieldValue = formFields?.[item];
@@ -34,7 +34,7 @@ const InfoContainer = () => {
                     )}
                     <Row justify="space-between" className="fields-row">
                       {fieldValue?.fields?.map((field) => (
-                        <Col span={10} key={field?.id}>
+                        <Col xs={24} md={10} key={field?.id}>
                           <Form.Item
                             name={field?.name}
                             label={field?.label}
@@ -63,10 +63,10 @@ const InfoContainer = () => {
             <Divider />
           </Space>
         </Col>
-        <Col>
+        <Col xs={{ span: 0 }}>
           <Divider type="horizontal" className="info-divider" />
         </Col>
-        <Col span={9}>
+        <Col xs={{ span: 24, order: 1 }} md={9}>
           <Space direction="vertical" className="info-container">
             <Row>
               <img src={DemoImg} alt="shield-icon" className="demo-img" />

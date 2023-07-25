@@ -9,7 +9,7 @@ const TicketePromise = () => {
       <RenderHeader title="The Tickete promise" />
       <Row justify="space-between">
         {ticketePromiseData?.map((item) => (
-          <Col key={item?.id} span={5}>
+          <Col key={item?.id} xs={24} md={5}>
             <CardComponent data={item} />
           </Col>
         ))}

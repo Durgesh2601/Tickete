@@ -22,7 +22,7 @@ const FrequentlyAskedQuestions = () => {
     <div className="help-container">
       <RenderHeader title="Frequently Asked Questions" />
       <Row justify="space-between">
-        <Col span={15}>
+        <Col xs={24} md={15}>
           <Collapse
             className="custom-collapse"
             style={{ background: "white" }}
@@ -35,7 +35,7 @@ const FrequentlyAskedQuestions = () => {
             }
           />
         </Col>
-        <Col span={6}>
+        <Col xs={24} md={6}>
           <Space direction="vertical" className="help-desk">
             <Row justify="space-between">
               <Col>

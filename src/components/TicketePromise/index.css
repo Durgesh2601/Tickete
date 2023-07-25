@@ -11,3 +11,16 @@
 .card-title {
   margin-top: 1.5rem;
 }
+
+@media only screen and (max-width: 600px) {
+  .tickete-container {
+    padding: 1rem;
+  }
+  .card-container {
+    padding: 1rem;
+    min-width: 100%;
+  }
+  .card-title {
+    margin-top: 1rem;
+  }
+}

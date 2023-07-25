@@ -9,3 +9,9 @@
 .help-icon {
   margin-right: 0.5rem;
 }
+
+@media only screen and (max-width: 600px) {
+  .navbar {
+    padding: 1rem;
+  }
+}

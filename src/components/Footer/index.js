@@ -17,7 +17,7 @@ const FooterComp = () => {
       </Row>
       <Divider className="footer-divider" />
       <Row justify="space-between">
-        <Col span={10}>
+        <Col xs={{ span: 24, order: 2 }} md={{ span: 12, order: 1 }}>
           <ul className="footer-col">
             <li>© Tickete Inc.</li>
             <li>Privacy</li>
@@ -25,7 +25,7 @@ const FooterComp = () => {
             <li>Cancellation policy</li>
           </ul>
         </Col>
-        <Col className="footer-icons">
+        <Col xs={{ span: 24, order: 1 }} md={{ span: 2, order: 1 }} className="footer-icons">
           <InstagramFilled />
           <FacebookOutlined />
           <TwitterOutlined />
